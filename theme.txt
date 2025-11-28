@@ -40,16 +40,6 @@ terminal-border: "0"
 }
 
 + label {
-  color = "#FFFFFF"
-  font = "Funnel Sans Regular 16"
-  left = 91%
-  top = 95%
-  width = 100%
-  align = "left"
-  text = "Booting"
-}
-
-+ label {
   color = "#BFEFBC"
   font = "Funnel Sans Regular 16"
   left = 97%
