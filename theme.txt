@@ -4,48 +4,79 @@ desktop-image-scale-method: "fitwidth"
 desktop-image-h-align: "center"
 desktop-color: "#000000"
 terminal-box: "terminal_box_*.png"
-terminal-font: "Sevastopol Interface Regular 20"
+terminal-font: "Unifont Regular 16"
 terminal-left: "0"
 terminal-top: "0"
 terminal-width: "100%"
 terminal-height: "100%"
-terminal-border: "0"
+terminal-border: "8"
+
++ image {
+    file = "bg.png"
+      left = 1%+10
+      top = 4%+10
+      width = 800
+      height = 180
+}
 
 + boot_menu {
   left = 1%+10
-  top = 80%
+  top = 5%
   width = 800
-  height = 190
-  item_height = 36
-  item_font = "Funnel Sans Regular 16"
-  item_color = "#FFFFFF"
+  height = 180
+  item_height = 30
+  item_font = "Unifont Regular 16"
+  item_color = "#000000"
   item_padding = 0
   icon_width = 24
-  item_icon_space = 14
-  icon_height = 4
-  selected_item_color = "#BFEFBC"
-  selected_item_font = "Funnel Sans Regular 16"
-  item_spacing = 8
+  item_icon_space = 4
+  icon_height = 0
+  selected_item_color = "#000000"
+  selected_item_font = "Unifont Regular 16"
+  item_spacing = 4
   selected_item_pixmap_style = "selected_item_*.png"
 }
 
++ image {
+    file = "bg.png"
+    top = 1%
+    width = 20%
+    left = 40%
+    right = 40%
+    height = 42
+}
 + label {
-  color = "#FFFFFF"
-  font = "Funnel Sans Regular 16"
-  left = 1%+10
-  top = 95%
-  width = 100%
-  align = "left"
-  text = "Press C for Console or E to Edit"
+    font = "Unifont Regular 16"
+    top = 1%
+    width = 20%
+    left = 40%
+    right = 40%
+    height = 20
+    align = "center"
+    text = "Amy-is-Online GRUB"
 }
 
 + label {
-  color = "#BFEFBC"
-  font = "Funnel Sans Regular 16"
-  left = 97%
+    font = "Unifont Regular 16"
+    top = 2%+4
+    width = 20%
+    left = 40%
+    right = 40%
+    height = 20
+    align = "center"
+    text = "Press C for Console or E to Edit."
+}
+
++ progress_bar {
+  fg_color = "#838E7C"
+  bg_color = "#DEE0DC"
+  text_color = "#000000"
+  border_color = "#FFFFFF"
+  font = "Unifont Regular 16"
   top = 95%
-  width = 100%
-  align = "left"
+  width = 7%
+  height = 22
+  left="90%+16"
   id = "__timeout__"
   text = "%d"
 }
